@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.deps_inspect/
+.env
+mcp_servers.json
+.o2d/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.idea/
+.vscode/

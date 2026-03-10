@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openproject-automation"
+version = "0.1.0"
+description = "DeepAgents-based OpenProject automation with MCP and custom tool loading."
+requires-python = ">=3.11"
+dependencies = [
+  "deepagents>=0.4.7",
+  "httpx>=0.28.1",
+  "langchain-mcp-adapters>=0.2.1",
+  "langchain-openai>=1.1.10",
+]
+
+[project.scripts]
+o2d = "openproject_automation.o2d_cli:main"
+open2deep = "openproject_automation.o2d_cli:main"
+
+[tool.setuptools.packages.find]
+include = ["openproject_automation*"]

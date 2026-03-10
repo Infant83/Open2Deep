@@ -1,0 +1,17 @@
+{
+  "example_stdio": {
+    "transport": "stdio",
+    "command": "python",
+    "args": [
+      "/absolute/path/to/your_mcp_server.py"
+    ]
+  },
+  "example_sse": {
+    "transport": "sse",
+    "url": "${EXAMPLE_MCP_URL}",
+    "headers": {
+      "Authorization": "Bearer ${EXAMPLE_MCP_TOKEN}"
+    }
+  }
+}
+
