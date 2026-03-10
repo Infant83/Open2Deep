@@ -6,13 +6,26 @@ build-backend = "setuptools.build_meta"
 name = "openproject-automation"
 version = "0.1.0"
 description = "DeepAgents-based OpenProject automation with MCP and custom tool loading."
+readme = "README.md"
+license = { file = "LICENSE" }
 requires-python = ">=3.11"
+keywords = ["agent", "cli", "deepagents", "mcp", "openproject"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
 dependencies = [
   "deepagents>=0.4.7",
   "httpx>=0.28.1",
   "langchain-mcp-adapters>=0.2.1",
   "langchain-openai>=1.1.10",
 ]
+
+[project.urls]
+Homepage = "https://github.com/Infant83/Open2Deep"
+Repository = "https://github.com/Infant83/Open2Deep"
 
 [project.scripts]
 o2d = "openproject_automation.o2d_cli:main"
